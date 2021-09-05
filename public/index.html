@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Workout Log</title>
+</head>
+
+<body>
+  <h1>Add form</h1>
+  <form id="addForm">
+    <label for="name">name</label>
+    <input type="text" name="name" id="name">
+    <label for="reps">reps</label>
+    <input type="number" name="reps" id="reps">
+    <label for="weight">weight</label>
+    <input type="number" name="weight" id="weight">
+    <label for="lbs">lbs</label>
+      <input id="lbs" type="radio" name="unit" value="0" checked="checked"/>
+    <label for="kgs">kgs</label>
+      <input id="kgs" type="radio" name="unit" value="1"/>
+    <input type="date" name="date" id="date">
+    <input type="submit" name="submit">
+  </form>
+
+  <h1 id="header1">Workouts Table</h1>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

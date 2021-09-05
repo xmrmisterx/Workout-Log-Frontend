@@ -1,0 +1,14 @@
+{
+  "name": "workout_log_frontend",
+  "version": "1.0.0",
+  "description": "workout log frontend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Bobby Nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.2"
+  }
+}

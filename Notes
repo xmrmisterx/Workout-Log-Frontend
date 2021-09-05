@@ -1,0 +1,18 @@
+-ok, now we need to add this database workout log project that has a front end and backend
+-let's first copy the code over from our assignment, then separate the front end and back end parts; we should probably delete our proxy
+server app and world's tallest mountains backend that we initially used app from Heroku first, so that we can add these frontend and 
+backend apps
+-alright, so we need to delete the proxy and the app that is run on the public html site, but what are their names? ok, so here's the 
+code from public html 'proxy = "https://warm-taiga-26874.herokuapp.com/"', so that looks to be the proxy. Actually, on our app dashboard
+wouldn't these just be the first 2 apps we have? Yeah, so it looks like warmtaiga and saltyplains are the two that we have from a while
+ago, so we should delete those. So, let's delete them, and make sure all our apps work?
+-ugh, there's no way to add notes it seems, we can rename an app, but then we might need to redeploy it or whatever, so I guess we can
+just keep the reference to what each app does in our vs code files
+-alright, so we configured all the files and tried the local web and the page comes up, but obv it doesn't work bc we don't have the
+server set up yet, so let's go ahead and set that up, then we can fully test this to see if it works.
+- ok, so we created the backend and uploaded the app to the cloud, now, let's update our serverURL to the backend URL and test it in
+heroku local before creating the frontend app
+- lol, so we try to submit something, and it doesn't work, which is obviously really bad. we look over our code, presumable bc it's bad
+and don't see anything, so we go to the browser console, and it looks like... a freaking CORS error, we can't access our backend from
+local host, and we are out of apps, so I guess we need to deploy this app as well and hope things go well, bc we can't really test it
+it seems
