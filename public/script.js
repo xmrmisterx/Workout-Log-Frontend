@@ -1,8 +1,8 @@
 // create server URL variable
 
 
-// const serverURL = "https://cryptic-dusk-31004.herokuapp.com/";
-const serverURL = "http://flip1.engr.oregonstate.edu:5125/";
+const serverURL = "https://cryptic-dusk-31004.herokuapp.com/";
+// const serverURL = "http://flip1.engr.oregonstate.edu:5125/";
 
 // create table and form variables
 
