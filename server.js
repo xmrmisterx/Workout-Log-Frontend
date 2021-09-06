@@ -5,12 +5,12 @@ var app = express();
 
 // set local port for quick testing
 
-// app.set('port', 5125);
+app.set('port', 5125);
 
 // set heroku port for deployment
 
-var port = process.env.PORT || 8080;
-app.set('port', port);
+// var port = process.env.PORT || 8080;
+// app.set('port', port);
 
 // set public files to be displayed
 

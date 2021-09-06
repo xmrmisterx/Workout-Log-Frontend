@@ -16,3 +16,15 @@ heroku local before creating the frontend app
 and don't see anything, so we go to the browser console, and it looks like... a freaking CORS error, we can't access our backend from
 local host, and we are out of apps, so I guess we need to deploy this app as well and hope things go well, bc we can't really test it
 it seems
+- our APP ADDRESS: https://arcane-wildwood-69561.herokuapp.com/ and APP GIT ADDRESS: https://git.heroku.com/arcane-wildwood-69561.git
+- wow, WTF, we are still getting cors errors from one heroku app to another, very awkward, so how do we get around this?
+- interesting, so we noticed that we didn't set up the server for heroku deployment, so we did, and now we are getting a JSON parsing
+error, do we have all the files we need, the body parser and all that? godamit, I thought we tested the backend already, so annoying.
+-damit, is the server acting up? let's test the server again, bc it doesn't seem to be working... how do we even test the server? we can
+use that Google API requests to make sure it's working I guess?
+-hmmm actually just going to our current backend server "https://cryptic-dusk-31004.herokuapp.com/" does give us an internal server error, I guess we tested this as a local host file, but did we test it as a non local host file, bc we should be getting that object 
+back, so let's try to test the backend and get the get request to return normally, and also maybe the reset table get request
+-ok, so we finally get the backend to work, our issue was a lot bigger than just some error, we needed the "clearDB" addon in order to
+use mySQL with heroku, now, this frontend needs some work
+-create a description for what the page does, then change the text of the edit button to "save" bc that's what it does, it doesn't edit,
+it saves the info

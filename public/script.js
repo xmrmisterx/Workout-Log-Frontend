@@ -1,8 +1,8 @@
 // create server URL variable
 
 
-const serverURL = "https://cryptic-dusk-31004.herokuapp.com/";
-// const serverURL = "http://flip1.engr.oregonstate.edu:5125/";
+// const serverURL = "https://cryptic-dusk-31004.herokuapp.com/";
+const serverURL = "http://flip1.engr.oregonstate.edu:5125/";
 
 // create table and form variables
 
@@ -245,7 +245,8 @@ const makeEditButton = () => {
 
     // set button text and id
 
-    editButton.innerHTML = "Edit";
+    editButton.innerHTML = "Save";
+    // editButton.innerHTML = "Edit";
     editButton.id = numberOfRows.toString();
 
     // add event listener
@@ -449,7 +450,7 @@ const insertData = () => {
     var JSONObject = getObject(addForm);
     req.send(JSONObject);
     var rows = JSON.parse(req.responseText)
-    // console.log(rows);
+    console.log("rows: " + rows);
 }
 
 // add event listener to form
