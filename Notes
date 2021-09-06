@@ -28,3 +28,4 @@ back, so let's try to test the backend and get the get request to return normall
 use mySQL with heroku, now, this frontend needs some work
 -create a description for what the page does, then change the text of the edit button to "save" bc that's what it does, it doesn't edit,
 it saves the info
+-ugh, so our local host wasn't running when we "heroku run node server.js" so we think it's just not working, but uploading the app doesn't work either. we look over our code and notice the port is still local, so we change it to heroku port and upload again
